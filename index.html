@@ -1,0 +1,945 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaur</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+<body class="bg-gray-900 text-white">
+    <!-- Top Bar -->
+    <div class="bg-gray-800 text-gray-400 py-2 px-4 sm:px-6 md:px-12">
+        <div class="flex flex-wrap justify-between items-center sm:text-center space-y-2 sm:space-y-0">
+            <div class="flex flex-wrap justify-center sm:justify-center md:justify-start space-x-4 text-center sm:text-left">
+                <span class="block text-sm">📍 Restaurant St, Delicious City, London 9678, UK</span>
+                <span class="block text-sm">⏰ Daily: 8:00 am to 10:00 pm</span>
+            </div>
+            <div class="flex flex-wrap justify-center sm:justify-center md:justify-end space-x-4 text-center sm:text-left">
+                <span class="block text-sm">📞 +123 456 7890</span>
+                <a href="mailto:booking@restaurant.com" class="hover:text-yellow-400 block text-sm">✉️ booking@restaurant.com</a>
+            </div>
+        </div>
+    </div>
+
+ <!-- Navbar -->
+<nav class="bg-black bg-opacity-80 px-4 sm:px-6 md:px-12 py-4 relative z-50">
+    <div class="flex justify-between items-center">
+        <!-- Logo -->
+        <div class="text-yellow-400 text-2xl font-serif font-bold">RESTAUR</div>
+
+        <!-- Hamburger Menu Button for Mobile and Tablet -->
+        <button id="menu-btn" class="block lg:hidden text-white focus:outline-none">
+            ☰
+        </button>
+
+        <!-- Menu Items -->
+        <ul id="menu" class="hidden lg:flex space-x-8 items-center">
+            <li class="relative group">
+                <a href="#home" class="flex items-center text-white hover:text-yellow-400">
+                    Home <span class="ml-1 text-sm group-hover:rotate-180 transition-transform">▼</span>
+                </a>
+                <div class="hidden group-hover:block absolute top-full left-0 bg-gray-700 text-sm py-2 px-4 rounded shadow-lg">
+                    <a href="#section1" class="block hover:text-yellow-400">Welcome</a>
+                    <a href="#section2" class="block hover:text-yellow-400">Introduction</a>
+                </div>
+            </li>
+            <li class="relative group">
+                <a href="#menus" class="flex items-center text-white hover:text-yellow-400">
+                    Menus <span class="ml-1 text-sm group-hover:rotate-180 transition-transform">▼</span>
+                </a>
+                <div class="hidden group-hover:block absolute top-full left-0 bg-gray-700 text-sm py-2 px-4 rounded shadow-lg">
+                    <a href="#breakfast" class="block hover:text-yellow-400">Breakfast</a>
+                    <a href="#lunch" class="block hover:text-yellow-400">Lunch</a>
+                    <a href="#dinner" class="block hover:text-yellow-400">Dinner</a>
+                </div>
+            </li>
+            <li><a href="#about" class="text-white hover:text-yellow-400">About Us</a></li>
+            <li><a href="#chefs" class="text-white hover:text-yellow-400">Our Chefs</a></li>
+            <li class="relative group">
+                <a href="#pages" class="flex items-center text-white hover:text-yellow-400">
+                    Pages <span class="ml-1 text-sm group-hover:rotate-180 transition-transform">▼</span>
+                </a>
+                <div class="hidden group-hover:block absolute top-full left-0 bg-gray-700 text-sm py-2 px-4 rounded shadow-lg">
+                    <a href="#gallery" class="block hover:text-yellow-400">Gallery</a>
+                    <a href="#events" class="block hover:text-yellow-400">Events</a>
+                    <a href="#faq" class="block hover:text-yellow-400">FAQs</a>
+                </div>
+            </li>
+            <li><a href="#blog" class="text-white hover:text-yellow-400">Blog</a></li>
+            <li><a href="#contact" class="text-white hover:text-yellow-400">Contact</a></li>
+        </ul>
+
+        <!-- CTA Button -->
+        <button class="hidden lg:block bg-yellow-400 hover:bg-yellow-500 text-black py-2 px-4 rounded font-medium">
+            Find a Table
+        </button>
+    </div>
+
+    <!-- Mobile and Tablet Menu -->
+    <ul id="mobile-menu" class="hidden lg:hidden flex flex-col space-y-4 mt-4 bg-gray-800 p-4 rounded-lg">
+        <li><a href="#home" class="text-white hover:text-yellow-400">Home</a></li>
+        <li><a href="#menus" class="text-white hover:text-yellow-400">Menus</a></li>
+        <li><a href="#about" class="text-white hover:text-yellow-400">About Us</a></li>
+        <li><a href="#chefs" class="text-white hover:text-yellow-400">Our Chefs</a></li>
+        <li><a href="#pages" class="text-white hover:text-yellow-400">Pages</a></li>
+        <li><a href="#blog" class="text-white hover:text-yellow-400">Blog</a></li>
+        <li><a href="#contact" class="text-white hover:text-yellow-400">Contact</a></li>
+        <button class="bg-yellow-400 hover:bg-yellow-500 text-black py-2 px-4 rounded font-medium">
+            Find a Table
+        </button>
+    </ul>
+</nav>
+<!-- Header 1 -->
+<header id="header1" class="relative bg-cover bg-center h-screen flex flex-col items-center justify-center text-center px-4"
+style="background-image: url('img/pexels-lum3n-44775-568370.jpg');">
+<div class="absolute inset-0 bg-black bg-opacity-50 z-0"></div>
+<div class="relative z-10 flex flex-col items-center justify-center text-center space-y-4">
+<p class="text-yellow-400 uppercase tracking-wider text-lg">Delightful Experience</p>
+<h1 class="text-4xl md:text-5xl font-serif font-bold">Flavors Inspired by the Seasons</h1>
+<p class="text-gray-300 mt-4 max-w-lg">Come with family & feel the joy of mouthwatering food</p>
+</div>
+<div class="absolute bottom-8 right-8">
+<div class="relative flex items-center justify-center w-26 h-26">
+<div class="absolute w-20 h-20 bg-black transform rotate-45"></div>
+<div class="relative bg-[#F4E0AF] w-16 h-16 flex flex-col items-center justify-center text-center shadow-lg">
+<img src="icon/table.png" alt="Logo" class="w-6 h-6 mb-1">
+<p class="text-black font-semibold text-xs uppercase">Book a Table</p>
+</div>
+</div>
+</div>
+</header>
+
+<!-- Header 2 -->
+<header id="header2" class="hidden relative bg-cover bg-center h-screen flex flex-col items-center justify-center text-center px-4"
+style="background-image: url('img/h1.jpg');">
+<div class="absolute inset-0 bg-black bg-opacity-50 z-0"></div>
+<div class="relative z-10 flex flex-col items-center justify-center text-center space-y-4">
+<p class="text-yellow-400 uppercase tracking-wider text-lg">A New Adventure</p>
+<h1 class="text-4xl md:text-5xl font-serif font-bold">Explore Flavors Like Never Before</h1>
+<p class="text-gray-300 mt-4 max-w-lg">Experience the joy of fresh ingredients and modern recipes</p>
+</div>
+<div class="absolute bottom-8 right-8">
+<div class="relative flex items-center justify-center w-26 h-26">
+<div class="absolute w-20 h-20 bg-black transform rotate-45"></div>
+<div class="relative bg-[#F4E0AF] w-16 h-16 flex flex-col items-center justify-center text-center shadow-lg">
+<img src="icon/table.png" alt="Logo" class="w-6 h-6 mb-1">
+<p class="text-black font-semibold text-xs uppercase">Book a Table</p>
+</div>
+</div>
+</div>
+</header>
+
+<!-- Header 3 -->
+<header id="header3" class="hidden relative bg-cover bg-center h-screen flex flex-col items-center justify-center text-center px-4"
+style="background-image: url('img/h2.jpg');">
+<div class="absolute inset-0 bg-black bg-opacity-50 z-0"></div>
+<div class="relative z-10 flex flex-col items-center justify-center text-center space-y-4">
+<p class="text-yellow-400 uppercase tracking-wider text-lg">Taste the Best</p>
+<h1 class="text-4xl md:text-5xl font-serif font-bold">Bringing You the Best Recipes</h1>
+<p class="text-gray-300 mt-4 max-w-lg">Enjoy delicious and heartwarming meals every day</p>
+</div>
+<div class="absolute bottom-8 right-8">
+<div class="relative flex items-center justify-center w-26 h-26">
+<div class="absolute w-20 h-20 bg-black transform rotate-45"></div>
+<div class="relative bg-[#F4E0AF] w-16 h-16 flex flex-col items-center justify-center text-center shadow-lg">
+<img src="icon/table.png" alt="Logo" class="w-6 h-6 mb-1">
+<p class="text-black font-semibold text-xs uppercase">Book a Table</p>
+</div>
+</div>
+</div>
+</header>
+
+<!-- Header 4 -->
+<header id="header4" class="hidden relative bg-cover bg-center h-screen flex flex-col items-center justify-center text-center px-4"
+style="background-image: url('img/h3.jpg');">
+<div class="absolute inset-0 bg-black bg-opacity-50 z-0"></div>
+<div class="relative z-10 flex flex-col items-center justify-center text-center space-y-4">
+<p class="text-yellow-400 uppercase tracking-wider text-lg">Seasonal Delights</p>
+<h1 class="text-4xl md:text-5xl font-serif font-bold">Enjoy the Taste of Freshness</h1>
+<p class="text-gray-300 mt-4 max-w-lg">Let every meal be a celebration of life</p>
+</div>
+<div class="absolute bottom-8 right-8">
+<div class="relative flex items-center justify-center w-26 h-26">
+<div class="absolute w-20 h-20 bg-black transform rotate-45"></div>
+<div class="relative bg-[#F4E0AF] w-16 h-16 flex flex-col items-center justify-center text-center shadow-lg">
+<img src="icon/table.png" alt="Logo" class="w-6 h-6 mb-1">
+<p class="text-black font-semibold text-xs uppercase">Book a Table</p>
+</div>
+</div>
+</div>
+</header>
+
+<!-- Header 5 -->
+<header id="header5" class="hidden relative bg-cover bg-center h-screen flex flex-col items-center justify-center text-center px-4"
+style="background-image: url('img/h4.jpg');">
+<div class="absolute inset-0 bg-black bg-opacity-50 z-0"></div>
+<div class="relative z-10 flex flex-col items-center justify-center text-center space-y-4">
+<p class="text-yellow-400 uppercase tracking-wider text-lg">Memorable Moments</p>
+<h1 class="text-4xl md:text-5xl font-serif font-bold">Celebrate with Us</h1>
+<p class="text-gray-300 mt-4 max-w-lg">Unforgettable dining experiences for you</p>
+</div>
+<div class="absolute bottom-8 right-8">
+    <div class="relative flex items-center justify-center w-26 h-26">
+    <div class="absolute w-20 h-20 bg-black transform rotate-45"></div>
+    <div class="relative bg-[#F4E0AF] w-16 h-16 flex flex-col items-center justify-center text-center shadow-lg">
+    <img src="icon/table.png" alt="Logo" class="w-6 h-6 mb-1">
+    <p class="text-black font-semibold text-xs uppercase">Book a Table</p>
+    </div>
+    </div>
+    </div>
+</header>
+
+<section class="py-16 px-4">
+    <!-- Titulli dhe përshkrimi -->
+    <div class="text-center">
+        <h2 class="text-yellow-400 font-serif text-lg uppercase tracking-wider">Flavors For Royalty</h2>
+        <h3 class="text-white text-2xl sm:text-3xl md:text-4xl font-serif font-bold mt-2 mb-4">
+            We Offer Top Notch
+        </h3>
+        <p class="text-gray-400 max-w-md sm:max-w-lg mx-auto">
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry lorem Ipsum has been the industry's standard dummy text ever.
+        </p>
+    </div>
+
+    <!-- Grila me kartat -->
+    <div class="flex flex-col items-center space-y-12 md:space-y-0 md:flex-row md:justify-center md:gap-12 lg:gap-24 mt-6">
+        <!-- Karta e parë -->
+        <div class="relative rounded-lg overflow-hidden shadow-lg w-full sm:w-[320px] md:w-[300px] h-[450px]">
+            <div class="h-[300px]">
+                <img src="img/breakfast.jpg" alt="Breakfast" class="w-full h-full object-cover">
+            </div>
+            <div class="text-center p-6">
+                <h4 class="text-white font-serif text-lg sm:text-xl md:text-2xl mb-2">Breakfast</h4>
+                <a href="#breakfast-menu" class="text-yellow-400 text-sm hover:text-white transition border-b-2">
+                    View Menu
+                </a>
+            </div>
+        </div>
+
+        <!-- Karta e dytë -->
+        <div class="relative rounded-lg overflow-hidden shadow-lg w-full sm:w-[320px] md:w-[300px] h-[450px]">
+            <div class="h-[300px]">
+                <img src="img/azz.jpg" alt="Appetizers" class="w-full h-full object-cover">
+            </div>
+            <div class="text-center p-6">
+                <h4 class="text-white font-serif text-lg sm:text-xl md:text-2xl mb-2">Appetizers</h4>
+                <a href="#appetizers-menu" class="text-yellow-400 text-sm hover:text-white transition border-b-2">
+                    View Menu
+                </a>
+            </div>
+        </div>
+
+        <!-- Karta e tretë -->
+        <div class="relative rounded-lg overflow-hidden shadow-lg w-full sm:w-[320px] md:w-[300px] h-[450px]">
+            <div class="h-[300px]">
+                <img src="img/drink.jpg" alt="Drinks" class="w-full h-full object-cover">
+            </div>
+            <div class="text-center p-6">
+                <h4 class="text-white font-serif text-lg sm:text-xl md:text-2xl mb-2">Drinks</h4>
+                <a href="#drinks-menu" class="text-yellow-400 text-sm hover:text-white transition border-b-2">
+                    View Menu
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="bg-gray-900 text-white py-16 px-4">
+    <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        <!-- Pjesa e majtë: Teksti -->
+        <div class="text-center lg:text-left">
+            <h3 class="text-yellow-400 uppercase text-sm font-serif tracking-widest mb-2">Our Story</h3>
+            <h2 class="text-2xl sm:text-3xl md:text-4xl font-serif font-bold mb-6">Every Flavor Tells a Story</h2>
+            <p class="text-gray-400 leading-relaxed mb-6">
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry lorem Ipsum has been the industry's standard dummy text ever since the when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into.
+            </p>
+            <div class="mb-6">
+                <p class="text-yellow-400 font-bold">Book Through Call</p>
+                <p class="text-xl sm:text-2xl font-serif text-gray-100">+80 (400) 123 4567</p>
+            </div>
+            <button class="px-6 py-2 border border-yellow-400 text-yellow-400 hover:bg-yellow-400 hover:text-black transition rounded">
+                Find a Table
+            </button>
+        </div>
+
+        <!-- Pjesa e djathtë: Fotot -->
+        <div class="relative">
+            <!-- Foto e madhe -->
+            <img src="img/resttt.jpg" alt="Restaurant" class="rounded-lg shadow-lg w-full h-[300px] sm:h-[350px] md:h-[400px] object-cover">
+            <!-- Rrethi mbi foton -->
+            <div class="absolute top-4 right-4 bg-transparent text-yellow-400 border border-yellow-400 rounded-full text-center px-6 py-2 text-xs sm:text-sm">
+                <p class="uppercase font-serif tracking-wider">Since</p>
+                <p class="text-xl sm:text-2xl font-bold">1950</p>
+            </div>
+            <!-- Foto e vogël -->
+            <div class="absolute bottom-[-60px] sm:bottom-[-50px] left-8 bg-gray-800 rounded-lg shadow-lg p-2 w-[200px] sm:w-[220px]">
+                <img src="img/chef.jpg" alt="Chef" class="w-full h-48 rounded-md object-cover">
+                <div class="border-t border-gray-700 mt-4 pt-2 text-center">
+                    <p class="text-yellow-400">Our Chef</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    
+
+<section class="bg-gray-900 text-white py-16 px-4">
+    <div class="w-full mx-auto grid grid-cols-1 lg:grid-cols-2 items-stretch">
+        <!-- Pjesa e majtë: Foto -->
+        <div class="w-full">
+            <img src="img/pexels-dmitriy-tarasenko-70199286-17342823.jpg" alt="Special Dish" class="w-full h-64 sm:h-80 lg:h-full object-cover">
+        </div>
+
+        <!-- Pjesa e djathtë: Teksti -->
+        <div class="p-6 sm:p-12 lg:p-24 bg-gray-800">
+            <h4 class="text-yellow-400 uppercase text-sm font-serif tracking-wider">Special Dish</h4>
+            <h2 class="text-2xl sm:text-3xl lg:text-4xl font-serif font-bold">Lobster Tortellini</h2>
+            <p class="text-gray-400 leading-relaxed text-sm sm:text-base">
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry lorem Ipsum has been the industry's standard dummy text ever since the when an unknown printer took a galley of type.
+            </p>
+            <div class="flex items-center space-x-4 mt-4">
+                <span class="text-gray-500 line-through text-base sm:text-lg">$40.00</span>
+                <span class="text-yellow-400 text-xl sm:text-2xl font-bold">$20.00</span>
+            </div>
+            <a href="#menu" class="inline-block px-6 py-3 mt-6 border border-yellow-400 text-yellow-400 hover:bg-yellow-400 hover:text-black transition rounded">
+                View All Menu
+            </a>
+        </div>
+    </div>
+</section>
+
+
+    
+    <section class="bg-gray-900 text-white py-16 px-4">
+        <div class="max-w-7xl mx-auto">
+            <!-- Titulli Kryesor -->
+            <div class="text-center mb-12">
+                <h4 class="text-yellow-400 uppercase text-sm font-serif tracking-wider mb-2">Special Selection</h4>
+                <h2 class="text-4xl font-serif font-bold">Delicious Menu</h2>
+            </div>
+    
+            <!-- Kategori Menuje -->
+            <div class="flex justify-center space-x-8 text-gray-400 text-lg font-medium border-b border-gray-700 pb-4 mb-8">
+                <button class="text-yellow-400 border-b-2 border-yellow-400 pb-2">Morning</button>
+                <button class="hover:text-yellow-400">Weekday Lunch</button>
+                <button class="hover:text-yellow-400">Dinner</button>
+                <button class="hover:text-yellow-400">Wines</button>
+            </div>
+    
+            <!-- Grila me Menunë -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Pjatë 1 -->
+                <div class="flex items-center space-x-6">
+                    <img src="img/greek.jpg" alt="Greek Salad" class="w-24 h-24 rounded-lg object-cover">
+                    <div>
+                        <h4 class="text-xl font-serif font-bold">Greek Salad</h4>
+                        <p class="text-gray-400 text-sm">Tomatoes, green bell pepper, sliced cucumber onion, olives, and feta cheese.</p>
+                        <span class="text-yellow-400 font-bold text-lg">$25.50</span>
+                    </div>
+                </div>
+    
+                <!-- Pjatë 2 -->
+                <div class="flex items-center space-x-6">
+                    <img src="img/lasagna.jpg" alt="Lasagne" class="w-24 h-24 rounded-lg object-cover">
+                    <div>
+                        <h4 class="text-xl font-serif font-bold">Lasagne <span class="bg-yellow-400 text-black text-xs px-2 py-1 rounded-full ml-2">Seasonal</span></h4>
+                        <p class="text-gray-400 text-sm">Vegetables, cheeses, ground meats, tomato sauce, seasonings and spices.</p>
+                        <span class="text-yellow-400 font-bold text-lg">$40.00</span>
+                    </div>
+                </div>
+    
+                <!-- Pjatë 3 -->
+                <div class="flex items-center space-x-6">
+                    <img src="img/butter.jpg" alt="Butternut Pumpkin" class="w-24 h-24 rounded-lg object-cover">
+                    <div>
+                        <h4 class="text-xl font-serif font-bold">Butternut Pumpkin</h4>
+                        <p class="text-gray-400 text-sm">Type setting industry lorem Ipsum is simply dummy text of the printing.</p>
+                        <span class="text-yellow-400 font-bold text-lg">$10.00</span>
+                    </div>
+                </div>
+    
+                <!-- Pjatë 4 -->
+                <div class="flex items-center space-x-6">
+                    <img src="img/tokusen.jpg" alt="Tokusen Wagyu" class="w-24 h-24 rounded-lg object-cover">
+                    <div>
+                        <h4 class="text-xl font-serif font-bold">Tokusen Wagyu <span class="bg-yellow-400 text-black text-xs px-2 py-1 rounded-full ml-2">New</span></h4>
+                        <p class="text-gray-400 text-sm">Vegetables, cheeses, ground meats, tomato sauce, seasonings and spices.</p>
+                        <span class="text-yellow-400 font-bold text-lg">$39.00</span>
+                    </div>
+                </div>
+    
+                <!-- Pjatë 5 -->
+                <div class="flex items-center space-x-6">
+                    <img src="img/olivias.jpg" alt="Olivas Rellenas" class="w-24 h-24 rounded-lg object-cover">
+                    <div>
+                        <h4 class="text-xl font-serif font-bold">Olivas Rellenas</h4>
+                        <p class="text-gray-400 text-sm">Avocados with crab meat, red onion, crab salad stuffed red bell pepper and green bell pepper.</p>
+                        <span class="text-yellow-400 font-bold text-lg">$25.50</span>
+                    </div>
+                </div>
+    
+                <!-- Pjatë 6 -->
+                <div class="flex items-center space-x-6">
+                    <img src="img/opu.jpg" alt="Opu Fish" class="w-24 h-24 rounded-lg object-cover">
+                    <div>
+                        <h4 class="text-xl font-serif font-bold">Opu Fish</h4>
+                        <p class="text-gray-400 text-sm">Vegetables, cheeses, ground meats, tomato sauce, seasonings and spices.</p>
+                        <span class="text-yellow-400 font-bold text-lg">$49.00</span>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Njoftim dhe Butoni -->
+            <div class="text-center mt-12">
+                <p class="text-gray-400">During winter daily from 7:00 pm to 9:00 pm</p>
+                <button class="mt-4 px-6 py-3 border border-yellow-400 text-yellow-400 hover:bg-yellow-400 hover:text-black transition rounded">
+                    View Our Menu
+                </button>
+            </div>
+        </div>
+    </section>
+    
+
+    <section class="bg-gray-900 text-white py-16 px-4">
+        <div class="max-w-7xl mx-auto">
+            <!-- Titulli Kryesor -->
+            <div class="text-center mb-12">
+                <h4 class="text-yellow-400 uppercase text-sm font-serif tracking-wider mb-2">Special Offer</h4>
+                <h2 class="text-4xl font-serif font-bold">Best Specialties</h2>
+            </div>
+    
+            <!-- Lista e Kartave -->
+            <div class="relative">
+                <!-- Butoni i majtë -->
+                <button class="absolute left-0 top-1/2 transform -translate-y-1/2 bg-gray-800 text-yellow-400 rounded-full w-10 h-10 flex items-center justify-center hover:bg-yellow-400 hover:text-black transition left">
+                    &#8249;
+                </button>
+    
+                <div class="grid grid-cols-1 md:grid-cols-4 gap-8 px-12">
+                    <!-- Karta 1 -->
+                    <div class="text-center">
+                        <img src="img/greek.jpg" alt="Greek Salad" class="rounded-lg mb-4 object-cover h-48 w-full">
+                        <h4 class="text-xl font-serif font-bold">Greek Salad</h4>
+                        <p class="text-gray-400 text-sm">Avocados with crab meat, red onion, crab salad red bell pepper...</p>
+                        <span class="text-yellow-400 font-bold text-lg">$39.00</span>
+                    </div>
+    
+                    <!-- Karta 2 -->
+                    <div class="text-center">
+                        <img src="img/tokusen.jpg" alt="Tokusen Wagyu" class="rounded-lg mb-4 object-cover h-48 w-full">
+                        <h4 class="text-xl font-serif font-bold">Tokusen Wagyu</h4>
+                        <p class="text-gray-400 text-sm">Tomatoes, green bell pepper, sliced cucumber onion, olives...</p>
+                        <span class="text-yellow-400 font-bold text-lg">$45.00</span>
+                    </div>
+    
+                    <!-- Karta 3 -->
+                    <div class="text-center">
+                        <img src="img/butter.jpg" alt="Butternut Pumpkin" class="rounded-lg mb-4 object-cover h-48 w-full">
+                        <h4 class="text-xl font-serif font-bold">Butternut Pumpkin</h4>
+                        <p class="text-gray-400 text-sm">Avocados with crab meat, red onion, crab salad stuffed red bell pepper...</p>
+                        <span class="text-yellow-400 font-bold text-lg">$15.00</span>
+                    </div>
+    
+                    <!-- Karta 4 -->
+                    <div class="text-center">
+                        <img src="img/opu.jpg" alt="Opu Fish" class="rounded-lg mb-4 object-cover h-48 w-full">
+                        <h4 class="text-xl font-serif font-bold">Opu Fish</h4>
+                        <p class="text-gray-400 text-sm">Vegetables, cheeses, ground meats, tomato sauce, seasonings...</p>
+                        <span class="text-yellow-400 font-bold text-lg">$12.00</span>
+                    </div>
+                </div>
+    
+                <!-- Butoni i djathtë -->
+                <button class="absolute right-0 top-1/2 transform -translate-y-1/2 bg-gray-800 text-yellow-400 rounded-full w-10 h-10 flex items-center justify-center hover:bg-yellow-400 hover:text-black transition right">
+                    &#8250;
+                </button>
+            </div>
+    
+            <!-- Butoni i Fundit -->
+            <div class="text-center mt-12">
+                <button class="px-6 py-3 border border-yellow-400 text-yellow-400 hover:bg-yellow-400 hover:text-black transition rounded">
+                    View Our Menu
+                </button>
+            </div>
+        </div>
+    </section>
+    
+    <section class="relative bg-gray-900 text-white">
+        <!-- Sfondi me fotografinë -->
+        <div class="relative bg-cover bg-center h-[600px]" style="background-image: url('img/friend.jpg');">
+            <!-- Overlay me transparencë -->
+            <div class="absolute inset-0 bg-black bg-opacity-50"></div>
+    
+            <!-- Teksti në qendër -->
+            <div class="relative h-full flex flex-col justify-center items-center text-center z-10">
+                <blockquote class="text-xl italic text-gray-200 max-w-3xl mx-auto">
+                    "I wanted to thank you for inviting me down for that amazing dinner the other night. The food was extraordinary."
+                </blockquote>
+                <div class="flex justify-center items-center space-x-4 mt-4">
+                    <img src="img/person1.jpg" alt="Person 1" class="w-12 h-12 rounded-full object-cover border-2 border-white">
+                    <img src="img/person2.jpg" alt="Person 2" class="w-12 h-12 rounded-full object-cover border-2 border-white">
+                    <img src="img/person3.jpg" alt="Person 3" class="w-12 h-12 rounded-full object-cover border-2 border-white">
+                </div>
+                <div class="flex flex-col items-center mt-6">
+                    <div class="flex space-x-1">
+                        <!-- Yjet -->
+                        <button class="text-yellow-400 hover:text-yellow-500">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12 .587l3.668 7.435 8.332 1.151-6.001 5.8 1.416 8.18L12 18.896l-7.415 4.257 1.416-8.18-6.001-5.8 8.332-1.151z" />
+                            </svg>
+                        </button>
+                        <button class="text-yellow-400 hover:text-yellow-500">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12 .587l3.668 7.435 8.332 1.151-6.001 5.8 1.416 8.18L12 18.896l-7.415 4.257 1.416-8.18-6.001-5.8 8.332-1.151z" />
+                            </svg>
+                        </button>
+                        <button class="text-yellow-400 hover:text-yellow-500">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12 .587l3.668 7.435 8.332 1.151-6.001 5.8 1.416 8.18L12 18.896l-7.415 4.257 1.416-8.18-6.001-5.8 8.332-1.151z" />
+                            </svg>
+                        </button>
+                        <button class="text-yellow-400 hover:text-yellow-500">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12 .587l3.668 7.435 8.332 1.151-6.001 5.8 1.416 8.18L12 18.896l-7.415 4.257 1.416-8.18-6.001-5.8 8.332-1.151z" />
+                            </svg>
+                        </button>
+                        <button class="text-yellow-400 hover:text-yellow-500">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12 .587l3.668 7.435 8.332 1.151-6.001 5.8 1.416 8.18L12 18.896l-7.415 4.257 1.416-8.18-6.001-5.8 8.332-1.151z" />
+                            </svg>
+                        </button>
+                        <button class="text-gray-400 hover:text-yellow-500">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12 .587l3.668 7.435 8.332 1.151-6.001 5.8 1.416 8.18L12 18.896l-7.415 4.257 1.416-8.18-6.001-5.8 8.332-1.151z" />
+                            </svg>
+                        </button>
+                    </div>
+            </div>
+        </div>
+      
+        
+      <!-- Rezervimi dhe Kontakti -->
+<div class="max-w-7xl mx-auto grid grid-cols-1 gap-1 md:grid-cols-2 py-8 px-4 -mt-40 relative z-10">
+    <!-- Rezervimi -->
+    <div class="bg-gray-800  p-8 shadow-lg">
+        <h3 class="text-2xl font-serif font-bold text-center mb-4">Online Reservation</h3>
+        <p class="text-center text-gray-400 mb-6">Booking request: +88-123-123456 or fill out the order form</p>
+        <form action="#" method="POST" class="space-y-4">
+            <div class="flex gap-4">
+                <input type="text" placeholder="Your Name" class="w-1/2 p-3 bg-gray-700 rounded-lg text-gray-300 focus:outline-none focus:ring focus:ring-yellow-400">
+                <input type="text" placeholder="Phone Number" class="w-1/2 p-3 bg-gray-700 rounded-lg text-gray-300 focus:outline-none focus:ring focus:ring-yellow-400">
+            </div>
+            <div class="flex gap-4">
+                <select class="w-1/3 p-3 bg-gray-700 rounded-lg text-gray-300 focus:outline-none focus:ring focus:ring-yellow-400">
+                    <option>1 Person</option>
+                    <option>2 People</option>
+                    <option>3 People</option>
+                    <option>4 People</option>
+                </select>
+                <input type="date" class="w-1/3 p-3 bg-gray-700 rounded-lg text-gray-300 focus:outline-none focus:ring focus:ring-yellow-400">
+                <input type="time" class="w-1/3 p-3 bg-gray-700 rounded-lg text-gray-300 focus:outline-none focus:ring focus:ring-yellow-400">
+            </div>
+            <textarea placeholder="Message" class="w-full p-3 bg-gray-700 rounded-lg text-gray-300 focus:outline-none focus:ring focus:ring-yellow-400"></textarea>
+            <button class="w-full bg-yellow-400 text-black py-3 rounded-lg font-bold hover:bg-yellow-500 transition">Book a Table</button>
+        </form>
+    </div>
+
+    <!-- Kontakti -->
+    <div class="bg-gray-800  p-8 shadow-lg">
+        <h3 class="text-2xl font-serif font-bold text-center mb-4">Contact Us</h3>
+        <div class="text-center space-y-4">
+            <p class="text-yellow-400 font-bold text-xl">+88-123-123456</p>
+            <p class="text-gray-400">Restaurant St, Delicious City, London 9678, UK</p>
+            <div class="text-gray-400">
+                <p>Lunch Time:</p>
+                <p>Monday to Sunday</p>
+                <p>11:00 am - 2:30 pm</p>
+            </div>
+            <div class="text-gray-400">
+                <p>Dinner Time:</p>
+                <p>Monday to Sunday</p>
+                <p>6:30 pm - 11:30 pm</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+        </div>
+    </section>
+    
+    <section class="bg-gray-900 py-16 px-4 mt-80">
+        <div class="max-w-7xl mx-auto">
+            <!-- Pjesa e titullit -->
+            <div class="text-center mb-12">
+                <h3 class="text-yellow-400 font-serif text-lg uppercase tracking-wider">Why Choose Us</h3>
+                <h2 class="text-white text-4xl font-serif font-bold mt-2">Our Strength</h2>
+            </div>
+    
+            <!-- Ikonat dhe përshkrimet -->
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 text-center mb-12">
+                <!-- Kuti 1 -->
+                <div class="bg-gray-800 p-6 rounded-lg">
+                    <div class="text-yellow-400 mb-4">
+                        <!-- Ikona si imazh -->
+                        <img src="icon/icons8-food-50.png" alt="Hygienic Food Icon" class="w-12 h-12 mx-auto">
+                    </div>
+                    <h4 class="text-white text-xl font-semibold mb-2">Hygienic Food</h4>
+                    <p class="text-gray-400 text-sm">Lorem ipsum is simply dummy printing and typesetting.</p>
+                </div>
+            
+                <!-- Kuti 2 -->
+                <div class="bg-gray-800 p-6 rounded-lg">
+                    <div class="text-yellow-400 mb-4">
+                        <img src="icon/icons8-restaurant-table-50.png" alt="Fresh Environment Icon" class="w-12 h-12 mx-auto">
+                    </div>
+                    <h4 class="text-white text-xl font-semibold mb-2">Fresh Environment</h4>
+                    <p class="text-gray-400 text-sm">Lorem ipsum is simply dummy printing and typesetting.</p>
+                </div>
+            
+                <!-- Kuti 3 -->
+                <div class="bg-gray-800 p-6 rounded-lg">
+                    <div class="text-yellow-400 mb-4">
+                        <img src="icon/icons8-chef-hat-40.png" alt="Skilled Chefs Icon" class="w-12 h-12 mx-auto">
+                    </div>
+                    <h4 class="text-white text-xl font-semibold mb-2">Skilled Chefs</h4>
+                    <p class="text-gray-400 text-sm">Lorem ipsum is simply dummy printing and typesetting.</p>
+                </div>
+            
+                <!-- Kuti 4 -->
+                <div class="bg-gray-800 p-6 rounded-lg">
+                    <div class="text-yellow-400 mb-4">
+                        <img src="icon/icons8-confetti-64.png" alt="Event & Party Icon" class="w-12 h-12 mx-auto">
+                    </div>
+                    <h4 class="text-white text-xl font-semibold mb-2">Event & Party</h4>
+                    <p class="text-gray-400 text-sm">Lorem ipsum is simply dummy printing and typesetting.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+    <section class="max-w-7xl mx-auto px-4 py-16">
+        <!-- Grid Container -->
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-4">
+            <!-- Left Section -->
+            <div class="md:col-span-1 flex flex-col space-y-4">
+                <!-- Top Box -->
+                <div class="bg-black text-center p-6 border border-gray-800">
+                    <h3 class="text-sm font-semibold uppercase mb-2">Best Menu</h3>
+                    <h2 class="text-lg sm:text-xl font-bold mb-4">Special Dishes</h2>
+                    <p class="text-gray-400 text-xs sm:text-sm mb-6">Lorem ipsum is simply dummy printing.</p>
+                    <a href="#" class="text-yellow-500 hover:underline font-medium">View Menu</a>
+                </div>
+    
+                <!-- Bottom Box -->
+                <div class="relative bg-cover bg-center p-6 border border-gray-800 h-40 sm:h-60" style="background-image: url('img/dishes.jpg');">
+                </div>
+            </div>
+    
+            <!-- Center Section -->
+            <div class="relative bg-cover bg-center md:col-span-2 h-60 sm:h-80 md:h-full" style="background-image: url('img/mes.jpg');">
+                <div class="absolute inset-0 bg-black bg-opacity-50"></div>
+                <div class="relative z-10 text-center flex flex-col justify-center items-center h-full">
+                    <h2 class="text-lg sm:text-xl font-bold text-white mb-4">Upcoming Events</h2>
+                    <p class="text-gray-200 text-xs sm:text-sm mb-6">Simply dummy printing and setting.</p>
+                    <a href="#" class="text-yellow-500 hover:underline font-medium">Join Event</a>
+                </div>
+            </div>
+    
+            <!-- Right Section -->
+            <div class="md:col-span-1 flex flex-col space-y-4">
+                <!-- Top Box -->
+                <div class="bg-black text-center p-6 border border-gray-800">
+                    <h3 class="text-sm font-semibold uppercase mb-2">Selected</h3>
+                    <h2 class="text-lg sm:text-xl font-bold mb-4">Chef Choice</h2>
+                    <p class="text-gray-400 text-xs sm:text-sm mb-6">Dummy printing lorem ipsum simply.</p>
+                    <a href="#" class="text-yellow-500 hover:underline font-medium">View Menu</a>
+                </div>
+    
+                <!-- Bottom Box -->
+                <div class="relative bg-cover bg-center border border-gray-800 h-40 sm:h-60" style="background-image: url('img/shef.jpg');">
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    
+      <section class="max-w-7xl mx-auto px-4 py-16">
+        <!-- Title -->
+        <div class="text-center mb-12">
+          <h3 class="text-lg uppercase text-yellow-500 font-medium tracking-widest mb-2">Experienced Team</h3>
+          <h2 class="text-4xl font-bold text-white">Meet Our Chef</h2>
+        </div>
+    
+        <!-- Chef Cards -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <!-- Chef Card 1 -->
+          <div class="text-center">
+            <img src="img/chef1.jpg" alt="Chef Image" class=" w-48 h-64 object-cover  shadow-lg mx-auto mb-4">
+            <h3 class="text-xl font-semibold">William Joe</h3>
+            <p class="text-yellow-500 text-sm uppercase font-medium mb-2">Master Chef</p>
+            <p class="text-gray-400 text-sm">
+              Lorem ipsum is simply dummy printing and typeset industry lorem ipsum has been the industry's.
+            </p>
+          </div>
+    
+          <!-- Chef Card 2 -->
+          <div class="text-center">
+            <img src="img/chef2.jpg" alt="Chef Image" class="w-48 h-64 object-cover  shadow-lg mx-auto mb-4">
+            <h3 class="text-xl font-semibold">Steave Den</h3>
+            <p class="text-yellow-500 text-sm uppercase font-medium mb-2">Master Chef</p>
+            <p class="text-gray-400 text-sm">
+              Lorem ipsum is simply dummy printing and typeset industry lorem ipsum has been the industry's.
+            </p>
+          </div>
+    
+          <!-- Chef Card 3 -->
+          <div class="text-center">
+            <img src="img/chef3.jpg" alt="Chef Image" class="w-48 h-64 object-cover  shadow-lg mx-auto mb-4">
+            <h3 class="text-xl font-semibold">Lily Sopy</h3>
+            <p class="text-yellow-500 text-sm uppercase font-medium mb-2">Master Chef</p>
+            <p class="text-gray-400 text-sm">
+              Lorem ipsum is simply dummy printing and typeset industry lorem ipsum has been the industry's.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="relative bg-cover bg-center h-screen" style="background-image: url('img/vd.jpg');">
+        <!-- Overlay -->
+        <div class="absolute inset-0 bg-black bg-opacity-50"></div>
+    
+        <!-- Content -->
+        <div class="relative z-10 text-center flex flex-col items-center justify-center h-full px-4">
+          <p class="text-yellow-500 text-sm uppercase tracking-widest mb-2">Amazing Experience</p>
+          <h1 class="text-4xl md:text-5xl font-bold mb-4">Watch Our Video</h1>
+          <button class="w-16 h-16 bg-white text-black rounded-full flex items-center justify-center mb-6">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="w-8 h-8" viewBox="0 0 16 16">
+              <path d="M10.804 8.697l-3.991 2.3C6.308 11.195 6 11.023 6 10.65V5.35c0-.374.308-.544.813-.347l3.991 2.3c.505.197.505.515 0 .694z"/>
+            </svg>
+          </button>
+          <p class="text-lg md:text-xl text-gray-300 mb-4">A modern restaurant with a menu that will make your mouth water.</p>
+          <p class="text-sm text-gray-400 italic">William Joe, Master Chef</p>
+    
+         <!-- Seksioni me numrat -->
+  <div id="counter-section" class="absolute bottom-10 w-full px-4">
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
+      <div>
+        <h2 class="text-3xl font-bold text-white counter" data-target="150">0</h2>
+        <p class="text-gray-400 text-sm">Daily Order</p>
+      </div>
+      <div>
+        <h2 class="text-3xl font-bold text-white counter" data-target="82">0</h2>
+        <p class="text-gray-400 text-sm">Special Dishes</p>
+      </div>
+      <div>
+        <h2 class="text-3xl font-bold text-white counter" data-target="35">0</h2>
+        <p class="text-gray-400 text-sm">Expert Chef</p>
+      </div>
+      <div>
+        <h2 class="text-3xl font-bold text-white counter" data-target="10">0</h2>
+        <p class="text-gray-400 text-sm">Awards Won</p>
+      </div>
+    </div>
+  </div>
+          </div>
+          </div>
+        </div>
+      </section>
+
+
+      <section class="max-w-7xl mx-auto px-4 py-16">
+        <!-- Title -->
+        <div class="text-center mb-12">
+          <p class="text-sm uppercase tracking-wide text-yellow-500 mb-2">Recent Updates</p>
+          <h2 class="text-4xl font-bold text-white">Upcoming Event</h2>
+        </div>
+    
+        <!-- Cards -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <!-- Card 1 -->
+          <div class="relative group">
+            <img src="img/dinner.jpg" alt="Dinner Event" class="w-full h-72 object-cover rounded-lg shadow-lg">
+            <div class="absolute inset-0 bg-black bg-opacity-50 flex flex-col justify-end p-4 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity">
+              <p class="text-xs text-gray-400 mb-1">15/06/2024</p>
+              <p class="text-sm text-yellow-500 uppercase mb-1">Food, Flavour</p>
+              <h3 class="text-lg font-semibold text-white">Flavour so good you'll try to eat with your eyes.</h3>
+            </div>
+          </div>
+    
+          <!-- Card 2 -->
+          <div class="relative group">
+            <img src="img/healthy.jpg" alt="Healthy Food" class="w-full h-72 object-cover rounded-lg shadow-lg">
+            <div class="absolute inset-0 bg-black bg-opacity-50 flex flex-col justify-end p-4 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity">
+              <p class="text-xs text-gray-400 mb-1">08/06/2024</p>
+              <p class="text-sm text-yellow-500 uppercase mb-1">Healthy Food</p>
+              <h3 class="text-lg font-semibold text-white">Flavour so good you'll try to eat with your eyes.</h3>
+            </div>
+          </div>
+    
+          <!-- Card 3 -->
+          <div class="relative group">
+            <img src="img/recipe.jpg" alt="Recipe" class="w-full h-72 object-cover rounded-lg shadow-lg">
+            <div class="absolute inset-0 bg-black bg-opacity-50 flex flex-col justify-end p-4 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity">
+              <p class="text-xs text-gray-400 mb-1">08/06/2024</p>
+              <p class="text-sm text-yellow-500 uppercase mb-1">Recipe</p>
+              <h3 class="text-lg font-semibold text-white">Try new recipes with us, food changes the mood.</h3>
+            </div>
+          </div>
+        </div>
+    
+        <!-- Button -->
+        <div class="text-center mt-12">
+          <a href="#" class="px-8 py-3 text-white border border-yellow-500 rounded-lg hover:bg-yellow-500 hover:text-black transition">View Our Blog</a>
+        </div>
+      </section>
+
+
+
+      <footer class="relative bg-cover bg-center" style="background-image: url('img/footer.jpg');">
+        <!-- Overlay -->
+        <div class="absolute inset-0 bg-black bg-opacity-70"></div>
+    
+        <!-- Footer Content -->
+        <div class="relative max-w-7xl mx-auto px-4 py-16 grid grid-cols-1 md:grid-cols-3 gap-8">
+            <!-- Left Navigation -->
+            <div class="flex flex-col items-center text-center space-y-2 sm:space-y-4 text-sm">
+                <a href="#" class="block hover:text-yellow-500">Home</a>
+                <a href="#" class="block hover:text-yellow-500">Menus</a>
+                <a href="#" class="block hover:text-yellow-500">About Us</a>
+                <a href="#" class="block hover:text-yellow-500">Our Chefs</a>
+                <a href="#" class="block hover:text-yellow-500">Pages</a>
+                <a href="#" class="block hover:text-yellow-500">Blog</a>
+                <a href="#" class="block hover:text-yellow-500">Contact</a>
+            </div>
+    
+            <!-- Center Content -->
+            <div class="bg-gray-800 p-6 rounded-lg text-center shadow-lg">
+                <h3 class="text-lg sm:text-xl font-bold uppercase text-yellow-500 mb-4">Restaur</h3>
+                <p class="text-xs sm:text-sm text-gray-400">Restaurant St, Delicious City, London 9578, UK</p>
+                <p class="text-xs sm:text-sm text-gray-400">booking@domainname.com</p>
+                <p class="text-xs sm:text-sm text-gray-400">Booking Request: +88-123-123456</p>
+                <p class="text-xs sm:text-sm text-gray-400">Open: 09:00 am - 01:00 pm</p>
+                <div class="border-t border-gray-700 my-6"></div>
+                <h4 class="text-sm sm:text-lg font-semibold mb-2">Get News & Offers</h4>
+                <p class="text-xs sm:text-sm text-gray-400 mb-4">Subscribe us & Get 25% Off</p>
+                <div class="flex flex-wrap justify-center gap-2">
+                    <input type="email" placeholder="Your email" class="w-full sm:w-auto bg-black text-xs sm:text-sm text-gray-400 px-4 py-2 border border-gray-600 rounded-l-lg focus:outline-none">
+                    <button class="bg-yellow-500 text-black px-4 py-2 rounded-lg sm:rounded-r-lg hover:bg-yellow-600 w-full sm:w-auto">Subscribe</button>
+                </div>
+            </div>
+    
+            <!-- Right Social Links -->
+            <div class="flex flex-col items-center text-center space-y-2 sm:space-y-4 text-sm">
+                <a href="#" class="block hover:text-yellow-500">Facebook</a>
+                <a href="#" class="block hover:text-yellow-500">Instagram</a>
+                <a href="#" class="block hover:text-yellow-500">Twitter</a>
+                <a href="#" class="block hover:text-yellow-500">Pinterest</a>
+                <a href="#" class="block hover:text-yellow-500">LinkedIn</a>
+                <a href="#" class="block hover:text-yellow-500">YouTube</a>
+                <a href="#" class="block hover:text-yellow-500">Google Map</a>
+            </div>
+        </div>
+    
+        <!-- Bottom Bar -->
+     <!-- Bottom Bar -->
+<div class="absolute bottom-0 left-0 w-full bg-black bg-opacity-80 text-gray-500 text-center py-4">
+    <p>&copy; 2024 Restaur. All Rights Reserved |  
+      <a href="#" class="text-yellow-500 hover:underline">Albina Demaj</a>
+    </p>
+  </div>
+  
+      </footer>
+
+</body>
+<script>
+
+        // JavaScript for dropdown functionality
+        function toggleDropdown(id) {
+            const dropdown = document.getElementById(id);
+            dropdown.classList.toggle('hidden');
+        }
+
+
+
+    const stars = document.querySelectorAll('button');
+    stars.forEach((star, index) => {
+        star.addEventListener('click', () => {
+            stars.forEach((s, i) => {
+                s.classList.toggle('text-yellow-400', i <= index);
+                s.classList.toggle('text-gray-400', i > index);
+            });
+        });
+    });
+
+
+    function animateCounters() {
+      const counters = document.querySelectorAll('.counter');
+
+      counters.forEach(counter => {
+        const target = +counter.getAttribute('data-target');
+        const increment = target / 100; // Përcakton shpejtësinë
+        let current = 0;
+
+        const updateCounter = () => {
+          current += increment;
+          if (current < target) {
+            counter.textContent = Math.ceil(current);
+            requestAnimationFrame(updateCounter);
+          } else {
+            counter.textContent = target;
+          }
+        };
+
+        updateCounter();
+      });
+    }
+
+    // Observer për të monitoruar scroll-in
+    const section = document.getElementById('counter-section');
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          animateCounters();
+        }
+      });
+    });
+
+    observer.observe(section);
+
+
+    const headers = [
+      document.getElementById('header1'),
+      document.getElementById('header2'),
+      document.getElementById('header3'),
+      document.getElementById('header4'),
+      document.getElementById('header5')
+    ];
+
+    let currentIndex = 0;
+
+    function showNextHeader() {
+      headers[currentIndex].classList.add('hidden');
+      currentIndex = (currentIndex + 1) % headers.length;
+      headers[currentIndex].classList.remove('hidden');
+    }
+
+    setInterval(showNextHeader, 4000);
+
+
+
+    const menuBtn = document.getElementById('menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+
+    menuBtn.addEventListener('click', () => {
+        mobileMenu.classList.toggle('hidden');
+    });
+
+
+
+</script>
+
+</html>
